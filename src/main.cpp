@@ -84,6 +84,7 @@ margen();
     }  
 		//Proceso de continuación
 		cont();
+		system("cls");
 		//Reinicio del Display
     	margen();
     	
@@ -134,6 +135,7 @@ margen();
     }
 	//Proceso de continuación
 	cont();
+	system("cls");
 	//Reinicio del display
 	margen();
     	

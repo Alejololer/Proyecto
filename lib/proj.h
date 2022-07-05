@@ -43,7 +43,6 @@ void cont()
     gotoxy(30,22);
     printf("<<PULSE CUALQUIER TECLA PARA CONTINUAR>>");
     getch();
-    system("cls");
 }
 
 void margen()
