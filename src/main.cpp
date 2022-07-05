@@ -13,7 +13,7 @@ int main()
 	float a,b,c,s1,s2,d,raiz,raiz1,va;
 	const int mm=241, si=253; 
 	
-margen();
+	margen();
 	//Inicio y Display
 	SetColor (BLACK,GREEN);
 	gotoxy(34,7);
@@ -83,14 +83,13 @@ margen();
 			}
     }  
 		//Proceso de continuación
-		cont();
-		system("cls");
-		//Reinicio del Display
-    	margen();
+	cont();
+	//Reinicio del Display
+    margen();
+    
+    //Resolucion formula general
     	
-    	//Resolucion formula general
-    	
-		SetColor(BLACK,WHITE);
+	SetColor(BLACK,WHITE);
    
 
 	gotoxy(7,8);
@@ -134,8 +133,7 @@ margen();
         printf("i");
     }
 	//Proceso de continuación
-	cont();
-	system("cls");
+    cont();
 	//Reinicio del display
 	margen();
     	

@@ -43,6 +43,7 @@ void cont()
     gotoxy(30,22);
     printf("<<PULSE CUALQUIER TECLA PARA CONTINUAR>>");
     getch();
+	system("cls");
 }
 
 void margen()
@@ -56,6 +57,7 @@ void margen()
 	printf("CALCULADORA DE ECUACIONES DE SEGUNDO GRADO");
 	gotoxy(3,4);
 	printf("Integrantes: Alejandro Alvarez, Alejandro Aleman");
+    //
 	for(i=1;i<=100;i++)
 	{
 
