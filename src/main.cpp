@@ -106,7 +106,7 @@ int main()
 	gotoxy(7,11);
 	printf("x1 = -(%.2f) + ",b1);
 	gotoxy(27,11);
-	printf("V(%.2f)%c - 4(%.2f)(%.2f)",si,b1,a1,c1);
+	printf("V(%.2f)%c - 4(%.2f)(%.2f)",b1,si,a1,c1);
 	gotoxy(26,13);
 	printf("_______________________________");
 	gotoxy(7,14);
@@ -165,7 +165,7 @@ int main()
 	gotoxy(7,11);
 	printf("x2 = -(%.2f) - ",b1);
 	gotoxy(27,11);
-	printf("V(%.2f)%c - 4(%.2f)(%.2f)",si,b1,a1,c1);
+	printf("V(%.2f)%c - 4(%.2f)(%.2f)",b1,si,a1,c1);
 	gotoxy(26,13);
 	printf("_______________________________");
 	gotoxy(57,14);
@@ -179,9 +179,9 @@ int main()
 	gotoxy(42,17);
 	printf("/ (%.2f)",2*a1);
 	gotoxy(7,17);
-	printf("x2 =%.2f - ",b1*(-1));
+	printf("x2 = %.2f - ",b1*(-1));
 	gotoxy(25,17);
-	printf("V%.2f - %.2f",(b1*b1)-(4*a*c));  
+	printf("V%.2f",(b1*b1)-(4*a*c));  
 	raiz1=sqrt((b1*b1)-(4*a1*c1));
 	gotoxy(23,19);
 	printf("x2 =%f",s2);
