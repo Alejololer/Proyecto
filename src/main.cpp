@@ -3,7 +3,7 @@
 #include <cmath>
 #include <fcntl.h>
 #include "../lib/proj.h"
-void margen();
+void margin();
 int main()
 {
 	//inicialización
@@ -13,10 +13,10 @@ int main()
 	float a,b,c,s1,s2,d,raiz,raiz1,va;
 	const int mm=241, si=253; 
 	
-	margen();
+	margin();
 	//Inicio y Display
 	SetColor (BLACK,GREEN);
-	gotoxy(34,7);
+	gotoxy(44,7);
 	printf("2nd Degree Calc");
 	SetColor (BLACK,LGREY);
 	gotoxy(7,8);
@@ -44,7 +44,7 @@ int main()
         gotoxy(2,15);
         printf("No existe solucion para el ejercicio");
 
-		fin();
+		end();
     return 0;
     }
     else
@@ -85,7 +85,8 @@ int main()
 		//Proceso de continuación
 	cont();
 	//Reinicio del Display
-    margen();
+	system("cls");
+    margin();
     
     //Resolucion formula general
     	
@@ -97,6 +98,11 @@ int main()
 	printf("/(2(a))");
 	 gotoxy(17,7);
 	printf("____________");
+
+	//Proceso de continuación
+    cont();
+	
+
 	//Calculo primera solución
 	
 	gotoxy(28,10);
@@ -107,6 +113,10 @@ int main()
 	printf("x1 = -(%.2f) + ",b1);
 	gotoxy(27,11);
 	printf("V(%.2f)%c - 4(%.2f)(%.2f)",b1,si,a1,c1);
+	//Proceso de continuación
+    cont();
+	
+
 	gotoxy(26,13);
 	printf("_______________________________");
 	gotoxy(7,14);
@@ -115,7 +125,9 @@ int main()
 	printf("V%.2f - %.2f",b1*b1,4*a1*c1);
 	gotoxy(57,14);
 	printf("/ (%.2f)",2*a1);
-	
+	//Proceso de continuación
+    cont();
+
 	gotoxy(26,16);
 	printf("________________");
 	gotoxy(42,17);
@@ -126,7 +138,10 @@ int main()
 	printf("V%.2f",(b1*b1)-(4*a*c));	
 	raiz1=sqrt((b1*b1)-(4*a1*c1));
 	int r=raiz1;
-	gotoxy(7,19);
+	//Proceso de continuación
+    cont();
+
+	gotoxy(7,20);
 	printf("x1 = %f",s1);
 	if(d<0)
     {
@@ -135,7 +150,8 @@ int main()
 	//Proceso de continuación
     cont();
 	//Reinicio del display
-	margen();
+	system("cls");
+	margin();
     	
 	//Chequeo si las soluciones son iguales, para no hacer procesos innecesarios	
 
@@ -146,7 +162,7 @@ int main()
 		printf("La segunda solucion es igual a la primera.\n");
 		gotoxy(7,9);
 		printf("x = %.2f",s1);
-		fin();
+		end();
 		return 0;
 	}
 
@@ -157,7 +173,9 @@ int main()
 	printf("/(2(a))");
 	gotoxy(17,7);
 	printf("____________");
-   
+   	//Proceso de continuación
+    cont();
+
     gotoxy(28,10);
 	printf("______________________________");
 	gotoxy(59,11);
@@ -166,6 +184,9 @@ int main()
 	printf("x2 = -(%.2f) - ",b1);
 	gotoxy(27,11);
 	printf("V(%.2f)%c - 4(%.2f)(%.2f)",b1,si,a1,c1);
+	//Proceso de continuación
+    cont();
+
 	gotoxy(26,13);
 	printf("_______________________________");
 	gotoxy(57,14);
@@ -174,6 +195,9 @@ int main()
 	printf("x2 = %.2f - ",b1*(-1));
 	gotoxy(25,14);
 	printf("V%.2f - %.2f",b1*b1,4*a1*c1);
+	//Proceso de continuación
+    cont();
+
 	gotoxy(26,16);
 	printf("________________");
 	gotoxy(42,17);
@@ -183,13 +207,16 @@ int main()
 	gotoxy(25,17);
 	printf("V%.2f",(b1*b1)-(4*a*c));  
 	raiz1=sqrt((b1*b1)-(4*a1*c1));
-	gotoxy(7,19);
+	//Proceso de continuación
+    cont();
+
+	gotoxy(7,20);
 	printf("x2 =%f",s2);
 	if(d<0)
     {
         printf("i");
     }
-	fin();
+	end();
 	return 0;
 }
 

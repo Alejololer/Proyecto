@@ -25,7 +25,6 @@ void SetColor(int Background, int Text){
     HANDLE terminal = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(terminal, colorTexto);    
 }
-
 void gotoxy(int x, int y)
 {
     HANDLE hcon = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -34,24 +33,22 @@ void gotoxy(int x, int y)
     dwPos.Y=y;
     SetConsoleCursorPosition(hcon, dwPos);
 }
-
 void cont()
 {
     SetColor (BLACK,BLUE);
     gotoxy(30,22);
     printf("<<PULSE CUALQUIER TECLA PARA CONTINUAR>>");
     getch();
-	system("cls");
+    SetColor (BLACK,WHITE);
 }
-
-void margen()
+void margin()
 {
 	//cabecera
 	int i;
 	SetColor (BLACK,DGREY);
-	gotoxy(25,2);
+	gotoxy(35,2);
 	printf("ESCUELA POLITECNICA NACIONAL");
-	gotoxy(18,3);
+	gotoxy(30,3);
 	printf("CALCULADORA DE ECUACIONES DE SEGUNDO GRADO");
 	gotoxy(3,4);
 	printf("Integrantes: Alejandro Alvarez, Alejandro Aleman");
@@ -75,7 +72,7 @@ void margen()
 		printf(".");
 	}
 }
-void fin()
+void end()
 {
     SetColor (BLACK,BLUE);
     gotoxy(30,22);
