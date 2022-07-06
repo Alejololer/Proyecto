@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <windows.h>
-#include <stdbool.h>
-#include <ctype.h>
 
 enum colors{
     BLACK=0,

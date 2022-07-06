@@ -126,7 +126,7 @@ int main()
 	printf("V%.2f",(b1*b1)-(4*a*c));	
 	raiz1=sqrt((b1*b1)-(4*a1*c1));
 	int r=raiz1;
-	gotoxy(23,19);
+	gotoxy(7,19);
 	printf("x1 = %f",s1);
 	if(d<0)
     {
@@ -183,7 +183,7 @@ int main()
 	gotoxy(25,17);
 	printf("V%.2f",(b1*b1)-(4*a*c));  
 	raiz1=sqrt((b1*b1)-(4*a1*c1));
-	gotoxy(23,19);
+	gotoxy(7,19);
 	printf("x2 =%f",s2);
 	if(d<0)
     {
