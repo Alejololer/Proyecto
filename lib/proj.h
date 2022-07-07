@@ -79,3 +79,27 @@ void end()
     printf("<<PULSE CUALQUIER TECLA PARA FINALIZAR>>");
     getch();
 }
+char conDeg()
+{
+    char con;
+    do
+	{	
+		system("cls");
+		margin();
+		SetColor(BLACK,GREEN);
+		gotoxy(7,7);
+		printf("Continuar usando 2nd Deg Calc (y)");
+		gotoxy(7,8);
+		printf("Para salir de 2nd Deg Calc (x)");
+		gotoxy(7,9);
+		SetColor(BLACK,WHITE);
+		printf("--> ");
+		scanf(" %c",&con);
+		if(con=='x'||con=='y')
+			break;
+		gotoxy(7,10);
+		printf("La entrada no fue valida, intentelo de nuevo");
+		cont();
+	} while(true);
+    return con;
+}
