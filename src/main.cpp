@@ -217,9 +217,16 @@ do
 			SetColor(BLACK,WHITE);
 			printf("x = %.2f",s1);
 			cont();
+			if(conDeg()=='x')
+			{
+				end();
+				return;
+			}
+			else 
+				continue;
 		} else
 			break;
-	} while(conDeg()=='y');
+	} while(true);
     //Calculo de la segunda soluci�n
     gotoxy(7,8);
 	printf("x = -b %c Vb%c - 4(a)(c)",mm,si);
