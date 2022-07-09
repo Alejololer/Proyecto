@@ -35,17 +35,17 @@ void gotoxy(int x, int y)
 }
 void cont()
 {
-    SetColor (BLACK,BLUE);
+    SetColor (BLACK,RED);
     gotoxy(30,22);
     printf("<<PULSE CUALQUIER TECLA PARA CONTINUAR>>");
     getch();
-    SetColor (BLACK,WHITE);
+	SetColor(BLACK,WHITE);
 }
 void margin()
 {
 	//cabecera
 	int i;
-	SetColor (BLACK,DGREY);
+	SetColor (BLACK,LBLUE);
 	gotoxy(35,2);
 	printf("ESCUELA POLITECNICA NACIONAL");
 	gotoxy(30,3);
@@ -74,7 +74,7 @@ void margin()
 }
 void end()
 {
-    SetColor (BLACK,BLUE);
+    SetColor (BLACK,RED);
     gotoxy(30,22);
     printf("<<PULSE CUALQUIER TECLA PARA FINALIZAR>>");
     getch();
@@ -86,7 +86,7 @@ char conDeg()
 	{	
 		system("cls");
 		margin();
-		SetColor(BLACK,GREEN);
+		SetColor(BLACK,DGREY);
 		gotoxy(7,7);
 		printf("Continuar usando 2nd Deg Calc (y)");
 		gotoxy(7,8);

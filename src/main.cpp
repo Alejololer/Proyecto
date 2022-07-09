@@ -11,7 +11,7 @@ int menu()
 	{
 		system("cls");
 		margin();
-		SetColor(BLACK,GREEN);
+		SetColor(BLACK,DGREY);
 		gotoxy(7,8);
 		printf("Bienvenido a CalcuMax");
 		gotoxy(7,9);
@@ -26,7 +26,7 @@ int menu()
 		SetColor(BLACK,WHITE);
 		printf("(+) ");
 		scanf(" %i",&input);
-		SetColor(BLACK,GREEN);
+		SetColor(BLACK,DGREY);
 		if(input<1||input>3)
 		{
 			gotoxy(7,14);
@@ -54,6 +54,7 @@ int menu()
 void quadcalc()
 {
 //inicializacion
+int c;
 float a1,b1,c1,s1,s2,d,raiz,raiz1,va;
 const int mm=241, si=253; 
 char con;
@@ -66,7 +67,7 @@ do
 		{	system("cls");
 			margin();
 			//Inicio y Display
-			SetColor (BLACK,GREEN);
+			SetColor (BLACK,DGREY);
 			gotoxy(7,7);
 			printf("Bienvenido a 2nd Degree Calc, ingrese los valores de su funcion:");
 			SetColor (BLACK,LGREY);
@@ -210,7 +211,7 @@ do
 
 		if(d==0)
 		{
-			SetColor(BLACK,GREEN);
+			SetColor(BLACK,DGREY);
 			gotoxy(7,8);
 			printf("La segunda solucion es igual a la primera debido a que d = 0.\n");
 			gotoxy(7,11);
@@ -279,7 +280,7 @@ do
 	cont();
 	
 } while(conDeg()=='y');
-	end;
+while ( (c = getchar()) != EOF && c != '\n') { }
 	return;
 }
 
@@ -294,7 +295,7 @@ void calc()
 		//Pedida primer valor y display
 		system("cls");
 		margin();
-		SetColor(BLACK,GREEN);
+		SetColor(BLACK,DGREY);
 		gotoxy(7,7);
 		printf("Bienvenido a la Calculadora, ingresa el primer valor a usar:");
 		gotoxy(7,8);
@@ -309,7 +310,7 @@ void calc()
 				//Pedida de operador
 				system("cls");
 				margin();
-				SetColor(BLACK,GREEN);
+				SetColor(BLACK,DGREY);
 				gotoxy(7,7);
 				printf("Ingresa el operador de tu operación");
 				SetColor(BLACK,WHITE);
@@ -321,7 +322,7 @@ void calc()
 				{	
 					break;
 				}
-				SetColor(BLACK,GREEN);
+				SetColor(BLACK,DGREY);
 				printf("Operador invalido, ingreselo de nuevo");
 				cont();
 			} while(true);
@@ -330,7 +331,7 @@ void calc()
 			system("cls");
 			margin();
 			gotoxy(7,7);
-			SetColor(BLACK,GREEN);
+			SetColor(BLACK,DGREY);
 			printf("Ingresa el siguiente valor:");	
 			gotoxy(7,8);
 			SetColor(BLACK,WHITE);
@@ -348,13 +349,13 @@ void calc()
 			do
 			{	system("cls");
 				margin();
-				SetColor(BLACK,GREEN);
+				SetColor(BLACK,DGREY);
 				gotoxy(7,7);
 				printf("El resultado es:");	
 				gotoxy(7,8);
 				SetColor(BLACK,WHITE);
 				printf("-->%f",resul);
-				SetColor(BLACK,GREEN);
+				SetColor(BLACK,DGREY);
 				gotoxy(7,9);
 				printf("Continuar usando el resultado (y)");
 				gotoxy(7,10);
@@ -369,7 +370,7 @@ void calc()
 				if(con=='n'||con=='x'||con=='y')
 					break;
 				gotoxy(7,13);
-				SetColor(BLACK,GREEN);
+				SetColor(BLACK,DGREY);
 				printf("La entrada no fue valida, intentelo de nuevo");
 				cont();
 			} while(true);
@@ -379,7 +380,6 @@ void calc()
 		if(con=='x')
 			break;
 	} while(true);
-	end();
 	return;
 }
 
