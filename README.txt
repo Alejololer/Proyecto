@@ -3,7 +3,7 @@ El programa empezó siendo una calculadora cuadrática, pero terminó evoluciona
 
 Para dar la sensación de que existe una GUI hicimos uso extensivo de la función gotoxy(int x,int y), pero esta función no se encuentra directamente integrada en la librería de VSCode o la g++, por lo que tuvimos que recrearla en incluirla
 en la librería, esto es cierto también para la función SetColor(int background, int text), la cual fue proveída por nuestro profesor Patricio Paccha, de la cual también hicimos uso extensivo para diferenciar el output de la consola con 
-el input del usuario.
+el input del usuario. Creamos un margen y cabecera con la función margin() de la libreria.
 
 La función menu() es un simple input reader, que retorna este input al main y ejecuta entonces el procedimiento correspondiente.
 
