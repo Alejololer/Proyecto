@@ -5,7 +5,7 @@
 #include "../lib/proj.h"
 int menu()
 {
-	//Pedida de entrada
+	//Inicialización
 	int input;
 	do
 	{
@@ -14,6 +14,7 @@ int menu()
 		SetColor(BLACK,DGREY);
 		gotoxy(7,8);
 		printf("Bienvenido a CalcMax");
+		//Pedida de entrada
 		gotoxy(7,9);
 		printf("Elija la herramienta que va a usar:");
 		gotoxy(7,10);
