@@ -13,7 +13,7 @@ int menu()
 		margin();
 		SetColor(BLACK,DGREY);
 		gotoxy(7,8);
-		printf("Bienvenido a CalcuMax");
+		printf("Bienvenido a CalcMax");
 		gotoxy(7,9);
 		printf("Elija la herramienta que va a usar:");
 		gotoxy(7,10);
@@ -43,15 +43,17 @@ int menu()
 	{
 		gotoxy(7,14);
 		printf("Abriendo la Calculadora...");
+		cont();
 	} else if(input==3)
 	{
 		gotoxy(7,14);
-		printf("Abriendo la Calculadora Cuadratica");
+		printf("Abriendo la Calculadora Cuadratica...");
+		cont();
 	}
 	return input;
 }
 
-void quadcalc()
+void secondDegCalc()
 {
 //inicializacion
 int c;
@@ -70,19 +72,19 @@ do
 			SetColor (BLACK,DGREY);
 			gotoxy(7,7);
 			printf("Bienvenido a 2nd Degree Calc, ingrese los valores de su funcion:");
-			SetColor (BLACK,LGREY);
+			SetColor (BLACK,DGREY);
 			gotoxy(7,8);
 			printf("x%c+(", si);
-			gotoxy(18,8);
+			gotoxy(16,8);
 			printf(")x+(");
-			gotoxy(28,8);
+			gotoxy(25,8);
 			printf(")=0");
 			SetColor (BLACK,WHITE);
 			gotoxy(2,8);
 			scanf("%f", &a1);
-			gotoxy(12,8);
+			gotoxy(11,8);
 			scanf("%f", &b1);
-			gotoxy(22,8);
+			gotoxy(20,8);
 			scanf("%f", &c1);
 			va=abs ((b1*b1)-4*a1*c1);
 			raiz= sqrt(va);
@@ -114,7 +116,7 @@ do
 		gotoxy(4,12);
 		printf("d = %.2f - (%.2f)",b1*b1,4*a1*c1);
 		gotoxy(4,13);
-		printf("d = %.2f", (b1*b1)-4*a1*c1);
+		printf("d = %f", (b1*b1)-4*a1*c1);
 		//Declaraci�n de los casos dependiendo del determinante
 		if(d > 0)
 		{
@@ -312,7 +314,7 @@ void calc()
 				margin();
 				SetColor(BLACK,DGREY);
 				gotoxy(7,7);
-				printf("Ingresa el operador de tu operación");
+				printf("Ingresa el operador de tu operacion");
 				SetColor(BLACK,WHITE);
 				gotoxy(7,8);
 				printf("--> ");
@@ -390,7 +392,7 @@ int main()
 		{
 			case 1: end(); exit(EXIT_SUCCESS);
 			case 2: calc(); break;
-			case 3: system("cls");printf("funca antes"); quadcalc(); printf("funca?"); break;
+			case 3: secondDegCalc(); break;
 		}
 	} while(true);
 }
