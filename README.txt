@@ -18,7 +18,7 @@ que el usuario presione una tecla (la cual se recomienda no ser las flechas, ya 
 feature o regresarse al menu. En contraste al procedimiento calc(), aquí utilizamos un procedimineto de librería para que el usuario decida si continuar o no por cuestiones de optimización, ya que este procedimiento se aplica tres veces 
 (cuando a=0, d=0 y cuando ya finaliza el procedimiento). Tambien cabe mencionar que este procedimiento tiene partes en las que "termina" antes de lo usual, siendo cuando a1=0 ya que no exisitiría solución, o cuando d=0 ya que ambas respuestas
 serían iguales, donde igualmente usamos conDeg(). También mencionaré que antes de cualquier tipo de resolucion se calcula el determinante para así saber si existen o no soluciones reales, o si son iguales. Este procedimiento igualmente hace
-uso de (do while)s de diferente longitud para causar su reinicio o su salida al menu. Tambien tiene un par de ifs para colocar una "i" si la respuesta calculada es parte de los numeros imaginarios.
+uso de (do while)s de diferente longitud para causar su reinicio o su salida al menu. Tambien tiene un par de ifs para colocar una "i" si la respuesta calculada es parte de los numeros imaginarios (d<0).
 
 Otra mención importante es el procedimiento end() de la librería, que nos permite mostrarle un mensaje de finalización al usuario y pedirle que ingrese un caracter para, o bien retornar al menu, o bien finalizar todo el programa.
 
